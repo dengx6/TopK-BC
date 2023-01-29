@@ -45,8 +45,8 @@ public:
 
 	set<int> neighbor_of_u;
 	set<int> neighbor_of_v;
-	multimap<int,set<Edge*>, greater<int>> Resultmap;//top-k结果集，来源于辅助结构，key是权重之和W(B),降序排序
-	multimap<int,set<Edge*>, greater<int>> Edgemap;//辅助结构，用来存储当前所有的(p,q)-biclique，删除了top-k (p,q)-biclique
+	multimap<int,set<Edge*>, greater<int>> Resultmap;//top-k结果集，key是权重之和W(B),降序排序
+	multimap<int,set<Edge*>, greater<int>> Edgemap;//用来存储当前所有的(p,q)-biclique，删除了top-k (p,q)-biclique
 	
 	map<int, int> commom_neighbor_cnt;//记录插入边的顶点u,v与二跳邻居之间共同邻居数量,目前只记录顶点u的二跳邻居
 	map<int,set<Edge*>> one_hop_tb;//u或v所有二跳邻居的邻居表,目前只记录顶点u的二跳邻居
