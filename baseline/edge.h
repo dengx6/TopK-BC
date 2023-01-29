@@ -13,7 +13,6 @@
 #include <map>
 #include <algorithm>
 #include <iterator>
-//#include <pthread.h>
 #include <unistd.h>
 #include <sys/time.h>
 
