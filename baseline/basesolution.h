@@ -42,7 +42,6 @@ public:
 	long long tmp_ts;
 	bool ts_is_same;
 	vector<Edge*> snapshot;
-	//vector<Edge*> localsubg;
 
 	set<int> neighbor_of_u;
 	set<int> neighbor_of_v;
@@ -54,10 +53,6 @@ public:
 	//map<int,set<int>> two_hop_tb;//顶点u或v的二跳邻居表
 
 	vector<int> L;//L of partial biclique
-	//vector<int> R;//R of partial biclique
-	//vector<int> C;//C of partial biclique,used to expand paritial biclique
-	//vector<int> tmp_R;//uesd for backtrack of R
-	//vector<int> tmp_C;//uesd for backtrack of C
 	vector<int>* r[MAX_P];
 	vector<int>* c[MAX_P];
 private:
