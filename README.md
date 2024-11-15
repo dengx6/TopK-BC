@@ -1,1 +1,1 @@
-# topk_biclique
+# TopK-BC
